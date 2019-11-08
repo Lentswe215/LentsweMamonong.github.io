@@ -1,0 +1,141 @@
+body {
+    background-image: url(/images/backy.jpeg);
+}
+
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: 1rf 4rf 1rf;
+    grid-template-areas: "header" "foravatar" "main";
+}
+
+.header {
+    grid-area: header;
+}
+
+.logo {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.foravatar {
+    grid-area: foravatar;
+    background-color: rgba(10, 4, 4, 0.795);
+}
+
+.avatar {
+    width: 20%;
+    height: 25%;
+    border-radius: 50%;
+    float: left;
+}
+
+#port {
+    color: #05b43a8e;
+    font-size: 500%;
+    float: center;
+}
+
+h1 {
+    text-align: center;
+    color: #23ac57dc;
+    font-family: linex sans bold italic;
+}
+
+.main {
+    background-color: rgb(3, 0, 0);
+    margin: 2px;
+    padding: 5px;
+}
+
+nav {
+    background-color: rgba(175, 8, 8, 0.863);
+    color: rgb(194, 190, 190);
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: greenyellow;
+}
+
+.icon {
+    width: 10mm;
+    height: 10mm;
+}
+
+.myskills {
+    background-color: rgb(2, 58, 52);
+    font-size: 20px;
+    text-align: center;
+}
+
+.numbs {
+    color: greenyellow;
+}
+
+.email {
+    color: #f56f78
+}
+
+.icons {
+    width: 15%;
+    height: 25%;
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1rf 4rf 1rf;
+        grid-template-areas: "header" "foravatar" "main";
+    }
+    .header {
+        grid-area: header;
+    }
+    .logo {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .foravatar {
+        grid-area: foravatar;
+        background-color: black;
+    }
+    .avatar {
+        width: 20%;
+        height: 25%;
+        border-radius: 50%;
+    }
+    h1 {
+        text-align: center;
+        color: #003300;
+        font-family: linex sans bold italic;
+    }
+    .main {
+        background-color: lightsalmon;
+    }
+    nav {
+        background-color: darkgrey;
+        color: firebrick;
+        font-size: 18px;
+    }
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+    }
+    .icon {
+        width: 10mm;
+        height: 10mm;
+    }
+    .icons {
+        width: 15%;
+        height: 25%;
+        text-align: center;
+    }
+}
