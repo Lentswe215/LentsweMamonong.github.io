@@ -1,67 +1,137 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephram Mamonong</title>
+    <link rel="icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./javascript/script.js"></script>
 </head>
 
 <body>
-
     <div class="container">
-        <div class="header">
-            <img src="./images/myLogo.png" class="logo" />
-        </div>
-        <div class="foravatar">
-            <img src="./images/20190320_214009.jpg" alt="avatar" class="avatar" /><br/><br/>
-            <h1 id="port"><b>MY PORTFOLIO</b></h1>
-        </div>
-        <div class="main">
-            <h1><u>ABOUT ME</u></h1>
-            <p>
-                Hello, my name is Ephraim Lentswe Mamonong. I am 25 year old from Khunwana village near Mahikeng. I graduated with Bachelor of Science in Information Technology with software development specialization from Richfield Graduate Institute of Technogy in
-                2018. In 2019 i joined Umuzu academy for web development learnership.
-            </p>
-            <br/>
-            <hr>
-            <h1><u>MY SKILLS</u></h1>
-            <div class="myskills">
-                <img src="./icons/htmlcsslogo.jpg" class="icons" />
-                <img src="./icons/jslogo.jpg" class="icons" />
-                <img src="./icons/phplogo.jpg" class="icons" />
-                <img src="./icons/javalogo.jpg" class="icons" />
-                <img src="./icons/cslogo.jpg" class="icons" />
-            </div>
+        <nav class="navbar lighten-3">
+            <label id='logo'></label>
+        <ul>
+            <li><a href="#header"><button>HOME</button></a></li>
+            <li><a href="#aboutme"><button class="btn">ABOUT ME</button></a></li>
+            <li><a href="#mywork"><button class="btn">MY WORK</button></a></li>
+            <li><a href="#contacts"><button class="btn">CONTACTS</button></a></li>
+        </ul>
 
-            <br/><br/>
-            <hr>
-            <h1><u>CONTACT DETAILS</u></h1>
-            <ul>
-                <li>
-                    <a href="www.linkedin.com/in/ephraim-mamonong-295281b4"><img src="./icons/linkedin.jpg" class="icon" /></a>
-                </li><br/>
-                <li><img src="./icons/cellphonelogo.jpg" class="icon" />
-                    <ul class="numbs">
-                        <li><b>0813230230</b></li>
-                        <li><b>0647573557</b></li>
-                    </ul>
-                </li><br/>
-                <li>
-                    <img src="./icons/gmaillogo.jpg" class="icon">
-                    <ul>
-                        <li class="email">ephraimmamonong@gmail.com</li>
-                    </ul>
-                </li>
-            </ul><br/>
-            <hr>
-            <h1><u>THIS ARE MY PROJECTS</u></h1>
-            <ul>
-                <li></li>
-            </ul>
+        <label id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        </nav>
+
+        <div id="header">
+            <div class="intro">
+                <p><span class="greetings intros anim">Hello, </span>
+                <span class="am intros anim">I am </span>
+                <span class="name intros anim">EPHRAIM </span></p>
+                <p><span class="jobtitle intros anim">FULL-STACK WEB DEVELOPER</span></p>
+            </div>
         </div>
-    </div>
+        <div id="aboutme">
+            <h1 class="anim"><strong>ABOUT ME</strong></h1>
+            <div class="innerDiv">
+                <p class="anim">
+                    Hello, I am Ephraim Lentswe Mamonong and I am Full-stack web developer from Mahikeng, North West but
+                    currently based in
+                    Johannesburg, Gauteng in South Africa. I currently doing learnership with Umuzi acedemy where I am
+                    getting skills that
+                    enables me to build responsive and interactive websites. I am also able to solve any problem that
+                    encounter in the web
+                    development industry</p>
+
+                <h3 class="anim">Programming Languages:</h3>
+                <ol class="languages">
+                    <li class="anim">Html and Css</li>
+                    <li class="anim">Javascript</li>
+                    <li class="anim">Python</li>
+                </ol>
+                <h3 class="anim">Technical skills:</h3>
+                <ol class="tech_skills">
+                    <li class="anim">Nodejs</li>
+                    <li class="anim">Express</li>
+                    <li class="anim">Jasmine TDD</li>
+                    <li class="anim">Django Python</li>
+                    <li class="anim">RESTful API</li>
+                    <li class="anim">Docker</li>
+                    <li class="anim">JQuery</li>
+                    <li class="anim">Ajax</li>
+                    <li class="anim">Postgresql</li>
+                    <li class="anim">MySQL</li>
+                    <li class="anim">Git</li>
+                    <li class="anim">Linux</li>
+                </ol>
+            </div>
+        </div>
+        <div id="mywork">
+            <h1 class="anim">MY WORK</h1>
+            <div class="innerDiv">
+                <h3 class="anim">Memory game</h3>
+                <div class="listofmywork">
+                    <li class="work anim"><a href="https://lentswe215.github.io/memory_game/" target="blank"><img
+                                src="./images/rsz_2screenshot_2020-05-18_11-40-43.png" class="memorygame image"></a>
+                    </li>
+                    <li class="tech_used anim">
+                        <ul>
+                            <li class="anim">Html and Css</li>
+                            <li class="anim">Vanilla Javascript</li>
+                        </ul>
+                    </li>
+                </div>
+
+                <h3 class="anim">Visitor checkout page(Github repository)</h3>
+                <div class="listofmywork">
+                    <li class="work anim"><a href="https://github.com/Lentswe215/add_a_little_ajax.git" target="blank"><img
+                                src="./images/Screenshot_2020-05-18_11-57-01.png" class="visitorform image"></a>
+                    </li>
+                    <li class="tech_used anim">
+                        <ul>
+                            <li class="anim">Html and Css</li>
+                            <li class="anim">Nodejs</li>
+                            <li class="anim">Express</li>
+                            <li class="anim">Ajax</li>
+                            <li class="anim">RESTful API</li>
+                            <li class="anim">Postgresql</li>
+                        </ul>
+                    </li>
+                </div>
+
+            </div>
+        </div>
+        <div id="contacts">
+            <h1 class="anim">CONTACTS</h1>>
+            <div class="innerDiv">
+                <ol class="contactlist">
+                    <li class="anim">
+                        <button class="cellphonebtn"><img src="./icons/phone-7-512.png" class="contacticon"> 0813230230
+                        </button></li>
+                    <li class="anim"><a href="mailto:ephraimmamonong@gmail.com" target="_blank"><Button class="contactbtn">
+                               <img src="./icons/mail-512.png" class="contacticon"> ephraimmamonong@gmail.com
+                            </Button></a></li>
+                    <li class="anim"><a href="https://github.com/Lentswe215?tab=repositories" target="_blank"><button class="contactbtn">
+                              <img src="./icons/github-11-512.png" class="contacticon"> Github  
+                            </button></a></li>
+                    <li class="anim"><a href="https://www.linkedin.com/in/ephraim-mamonong-295281b4" target="_blank"><button
+                                class="contactbtn">
+                               <img src="./icons/linkedin-5-512.png" class="contacticon"> Linkedin
+                            </button></a></li>
+                </ol>
+            </div>
+            
+            <div class="footer">ephraim &#169 2020</div>
+        </div>
+
 </body>
 
 </html>
